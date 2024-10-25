@@ -4,12 +4,13 @@ namespace ACME.LearningCenterPlatform.API.Publishing.Domain.Model.Entities;
 
 public partial class Asset : IPublishable
 {
+    public int Id { get; private set; }
     public AcmeAssetIdentifier AssetIdentifier { get; private set; }
     public EPublishingStatus Status { get; private set; }
     public EAssetType Type { get; private set; }
     public virtual bool Readable => false;
     public virtual bool Viewable => false;
-    
+
     public Asset(EAssetType type)
     {
         AssetIdentifier = new AcmeAssetIdentifier();
