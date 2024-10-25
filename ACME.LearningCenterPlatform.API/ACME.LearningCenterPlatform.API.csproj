@@ -28,8 +28,6 @@
     <ItemGroup>
       <Folder Include="IAM\" />
       <Folder Include="Profiles\" />
-      <Folder Include="Publishing\Domain\Model\Aggregates\" />
-      <Folder Include="Publishing\Domain\Model\Commands\" />
       <Folder Include="Publishing\Domain\Model\Queries\" />
       <Folder Include="Shared\" />
     </ItemGroup>
