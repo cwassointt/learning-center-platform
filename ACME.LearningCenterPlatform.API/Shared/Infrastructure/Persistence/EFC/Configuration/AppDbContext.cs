@@ -46,8 +46,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
 
         builder.Entity<Tutorial>().HasMany(t => t.Assets);
         
-        // TODO: Add relationships
-        
         builder.Entity<Category>()
             .HasMany(c => c.Tutorials)
             .WithOne(t => t.Category)
